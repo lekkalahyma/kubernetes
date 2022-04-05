@@ -1,23 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: static-deploy
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app:  static-deploy
+  replicas: 2     
   template:
     metadata:
       labels:
-        app: myapp
+        app:  static-deploy
     spec:
       containers:
-      - name: myapp
-        image: <151439720941.dkr.ecr.ap-northeast-1.amazonaws.com/docker:7>
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
+      - name:  static-deploy
+        image: 151439720941.dkr.ecr.ap-northeast-1.amazonaws.com/docker:NUMBER
         ports:
-        - containerPort: <80>
+        - containerPort: 80
 
