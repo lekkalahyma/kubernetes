@@ -1,9 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name:  static-website
-  labels:
-    name: 
+  name:  static-website 
 spec:
   rules:
   - host: kubernetes.lekkalahyma.xyz
