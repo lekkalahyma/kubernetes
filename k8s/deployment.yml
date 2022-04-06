@@ -6,6 +6,7 @@ spec:
   selector:
     matchLabels:
       app: static-deploy
+  replicas: 2
   template:
     metadata:
       labels:
