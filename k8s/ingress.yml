@@ -6,11 +6,7 @@ spec:
   rules:
   - host: kubernetes.lekkalahyma.xyz
     http:
-      paths:
-      - pathType: 
-        path: 
-        backend:
-          service:
+
             name: static-svc
             port: 
               number: 80
