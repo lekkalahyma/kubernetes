@@ -3,10 +3,10 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
  name: static-ingress
- namespace: static-website
+ namespace: static
 spec:
  rules:
- - host:  kubernetes.lekkalahyma.xyz
+ - host: static.pronb.xyz
    http:
      paths:
      - path:
