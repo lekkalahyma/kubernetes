@@ -1,12 +1,15 @@
+
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name:  static-website 
+ name: static-ingress
+ namespace: static-website
 spec:
-  rules:
-  - host: kubernetes.lekkalahyma.xyz
-    http:
-
-            name: static-svc
-            port: 
-              number: 80
+ rules:
+ - host:  kubernetes.lekkalahyma.xyz
+   http:
+     paths:
+     - path:
+       backend:
+         serviceName: static-svc
+         servicePort: 80
