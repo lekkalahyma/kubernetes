@@ -6,7 +6,7 @@ metadata:
  namespace: static
 spec:
  rules:
- - host: static.pronb.xyz
+ - host: static.lekkalahyma.xyz
    http:
      paths:
      - path:
